@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
 
     @RequestMapping("/")
-    public String index() {
+    public String welcome() {
         return "Generic greeting message";
+    }
+
+    @RequestMapping("/status")
+    public int status() {
+        return 200;
     }
 }
