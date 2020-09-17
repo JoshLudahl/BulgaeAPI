@@ -1,5 +1,7 @@
 package com.bulgae.api.models.property;
 
+import com.bulgae.api.models.Users.Broker;
+
 import java.util.ArrayList;
 
 public class Property {
@@ -15,4 +17,5 @@ public class Property {
     private int daysOnMarket;
     private ArrayList<String> imageURLs;
     private String alert;
+    private Broker listingAgent;
 }
