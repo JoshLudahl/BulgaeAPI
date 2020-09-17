@@ -11,7 +11,10 @@ import javax.naming.Name;
 public class UserController {
 
     @RequestMapping("/user")
-    public User index(@RequestParam(value = "id", defaultValue = "unknown") String id) {
+    public User index(@RequestParam(value = "id", defaultValue = "404") String id) {
+        if (id.equals("404")) {
+            return new User ("unknown", "unknown", "404");
+        }
         return new User("Frank", "ocean", id);
     }
 }
