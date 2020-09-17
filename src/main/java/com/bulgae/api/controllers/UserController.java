@@ -1,5 +1,6 @@
 package com.bulgae.api.controllers;
 
+import com.bulgae.api.models.Broker;
 import com.bulgae.api.models.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +14,6 @@ public class UserController {
         if (id.equals("404")) {
             return new User ("unknown", "unknown", "404");
         }
-        return new User("Frank", "ocean", id);
+        return new Broker("Frank", "Ocean", id);
     }
 }
