@@ -4,6 +4,10 @@ public class User {
     private String firstName;
     private String lastName;
     private String id;
+    private String phone;
+    private String extension;
+    private String email;
+    private Role role;
 
     public User(String firstName, String lastName, String id) {
         this.firstName = firstName;
