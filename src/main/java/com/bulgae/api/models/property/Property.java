@@ -1,5 +1,7 @@
 package com.bulgae.api.models.property;
 
+import java.util.ArrayList;
+
 public class Property {
     private Address address;
     private Building building;
@@ -11,4 +13,6 @@ public class Property {
     private String description;
     private double taxes;
     private int daysOnMarket;
+    private ArrayList<String> imageURLs;
+    private String alert;
 }
