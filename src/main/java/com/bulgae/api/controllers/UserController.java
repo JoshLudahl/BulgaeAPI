@@ -1,7 +1,7 @@
 package com.bulgae.api.controllers;
 
-import com.bulgae.api.models.Users.Broker;
-import com.bulgae.api.models.Users.User;
+import com.bulgae.api.models.users.Broker;
+import com.bulgae.api.models.users.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

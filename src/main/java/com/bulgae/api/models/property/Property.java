@@ -1,6 +1,6 @@
 package com.bulgae.api.models.property;
 
-import com.bulgae.api.models.Users.Broker;
+import com.bulgae.api.models.users.Broker;
 
 import java.util.ArrayList;
 

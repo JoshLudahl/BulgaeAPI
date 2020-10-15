@@ -1,4 +1,4 @@
-package com.bulgae.api.models.Users;
+package com.bulgae.api.models.users;
 
 public class Broker extends User {
     public Broker(String firstName, String lastName, String id) {
