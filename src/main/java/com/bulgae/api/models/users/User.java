@@ -1,18 +1,20 @@
 package com.bulgae.api.models.users;
 
+import org.springframework.data.annotation.Id;
+
 public class User {
     private String firstName;
     private String lastName;
-    private String id;
+    @Id private String id;
     private String phone;
     private String extension;
     private String email;
     private Role role;
 
-    public User(String firstName, String lastName, String id) {
+    public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.id = id;
+
     }
 
     public String getFirstName() {
@@ -22,9 +24,4 @@ public class User {
     public String getLastName() {
         return lastName;
     }
-
-    public String getId() {
-        return id;
-    }
-
 }
