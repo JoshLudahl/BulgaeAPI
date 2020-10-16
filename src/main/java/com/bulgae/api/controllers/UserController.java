@@ -15,13 +15,19 @@ public class UserController {
     @Autowired
     UserRepository repo;
 
-    @RequestMapping("/user")
+    @RequestMapping("/users")
     public ArrayList<User> index() {
         ArrayList<User> users = new ArrayList<>();
         for (User user: repo.findAll()) {
-            System.out.println(user.toString());
             users.add(user);
         }
         return users;
     }
+
+    @RequestMapping("/user")
+    public User user() {
+        return new User("Tedward", "Spud");
+    }
 }
+
+
