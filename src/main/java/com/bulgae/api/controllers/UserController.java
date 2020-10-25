@@ -27,7 +27,9 @@ public class UserController {
     }
 
     @RequestMapping("/user")
-    public Optional<User> user(@RequestParam String id) {
+    public Optional<User> user(
+            @RequestParam String id
+    ) {
         Optional<User> user = repo.findById(id);
         return user;
     }
