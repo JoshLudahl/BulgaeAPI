@@ -1,6 +1,6 @@
 package com.bulgae.api.controllers;
 
-import com.bulgae.api.models.repositories.user.UserRepository;
+import com.bulgae.api.models.repositories.users.UserRepository;
 import com.bulgae.api.models.users.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,6 +40,15 @@ public class UserController {
     ) {
         User user = new User(firstName, lastName, email);
         repo.save(user);
+        return user;
+    }
+
+    @RequestMapping("/user/remove")
+    public Optional<User> removeUser(
+            @RequestParam String id
+    ) {
+        Optional<User> user = repo.findById(id);
+        repo.deleteById(id);
         return user;
     }
 }
