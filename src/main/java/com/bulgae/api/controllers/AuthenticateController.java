@@ -9,7 +9,7 @@ public class AuthenticateController {
 
     @RequestMapping("/login")
     public User login() {
-        return new User("fname", "lname");
+        return new User("fname", "lname", "email");
     }
 
     @RequestMapping("/logout")
