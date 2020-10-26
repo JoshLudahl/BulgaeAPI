@@ -1,6 +1,5 @@
 package com.bulgae.api.models.users;
 
-
 import org.springframework.data.annotation.Id;
 
 public class User {
