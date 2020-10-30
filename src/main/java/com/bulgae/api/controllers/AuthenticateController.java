@@ -17,12 +17,19 @@ public class AuthenticateController {
     UserRepository userRepository;
 
     @RequestMapping("/login")
-    public User login() {
+    public User login(
+            @RequestParam String username,
+            @RequestParam String password
+            //sanitize
+            //check db for user
+            //if good, return a jwt/session/status 200, etc.
+    ) {
         return new User("fname", "lname", "email");
     }
 
     @RequestMapping("/logout")
     public int logout() {
+        //clear the session / jwt
         return 200;
     }
 

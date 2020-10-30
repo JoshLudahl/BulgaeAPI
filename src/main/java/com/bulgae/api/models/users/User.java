@@ -29,6 +29,10 @@ public class User {
         return lastName;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public String getEmail() {
         return email;
     }

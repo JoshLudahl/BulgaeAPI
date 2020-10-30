@@ -45,6 +45,15 @@ public class UserController {
         return user;
     }
 
+    @RequestMapping("/user/update")
+    public Optional<User> update(
+            @RequestParam User userToUpdate
+    ) {
+        Optional<User> user = repo.findById(userToUpdate.getId());
+        // perform update on user object
+        return user;
+    }
+
     @RequestMapping("/user/remove")
     public Optional<User> removeUser(
             @RequestParam String id
