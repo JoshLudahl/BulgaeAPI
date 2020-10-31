@@ -9,7 +9,6 @@ public class User {
     private String phone;
     private String extension;
     private String email;
-    private Role role;
 
     public User() {}
     public User(String firstName, String lastName, String email) {
